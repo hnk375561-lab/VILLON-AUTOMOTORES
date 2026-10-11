@@ -1,17 +1,17 @@
 # De demo a producción (actualizado 2026-10-08)
 
-El sitio ya es el oficial de Chita Automotores (sin avisos de demo, con JSON-LD activo en `index.html`). Lo único temporal es la **indexación**: mientras `publicacion.publicIndexing` sea `false` en `data/dealership.json`, las 4 páginas llevan `noindex, nofollow` y `robots.txt` lleva `Disallow: /` (ver `CLAUDE.md`, regla 5).
+El sitio ya es el oficial de Automotores Villon (sin avisos de demo, con JSON-LD activo en `index.html`). Lo único temporal es la **indexación**: mientras `publicacion.publicIndexing` sea `false` en `data/dealership.json`, las 4 páginas llevan `noindex, nofollow` y `robots.txt` lleva `Disallow: /` (ver `CLAUDE.md`, regla 5).
 
 La puerta de salida es `npm run test:prod` (`node scripts/validate-dealership.mjs --prod`). **Falla a propósito** mientras quede algo de esta lista. `npm test` (modo demo) exige lo contrario y es el que corre el workflow de Pages.
 
 ## Datos que faltan (los tiene que dar el dueño)
 1. **Lunes habitual** (opcional): el horario publicado sale de la ficha de Google Maps (mar–vie 9–17, sáb 8:30–12, dom cerrado); el lunes no figura, por eso el sitio dice "Lunes y feriados: consultá por WhatsApp". Si el dueño confirma el lunes, cambiar `NEGOCIO.horarios` y `hours.display` y sumar `Monday` al JSON-LD.
-2. Email oficial (`chitaautomotores@gmail.com` figura en el Facebook del negocio) y razón social, CUIT, domicilio legal para la sección "Responsable" de `privacidad.html`. Estado fiscal y CUIT tienen fuentes en conflicto: no se publican.
+2. Email oficial (`PENDIENTE_EMAIL` figura en el Facebook del negocio) y razón social, CUIT, domicilio legal para la sección "Responsable" de `privacidad.html`. Estado fiscal y CUIT tienen fuentes en conflicto: no se publican.
 3. Autorización para usar fotos y videos (hoy salen de Instagram/Facebook); decidir si se tapan patentes visibles. Registrarla en `data/dealership.json` (`photos.authorized`).
 4. Marcas 0 km actuales, condiciones de financiación, qué significa "Recibimos tu usado", consignación.
 5. Km real del Palio 2017 (128.000 o 120.000) y unidades duplicadas del stock (Tracker 1.8N 2018 y Palio 1.4N).
 6. Precios por unidad o "Consultar".
-7. Si se muestra la Gestoría (03442 54-7671; hoy está en `NEGOCIO.gestoria` pero no se renderiza).
+7. Si se muestra la Gestoría (sin número cargado; hoy está en `NEGOCIO.gestoria` pero no se renderiza).
 8. Dominio propio y quién lo administra.
 
 ## Al aprobar (checklist)

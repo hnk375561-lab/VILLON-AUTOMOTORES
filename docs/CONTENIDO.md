@@ -1,6 +1,6 @@
 # Cargar el contenido real de Chita
 
-Chita publica en Facebook (`facebook.com/Chitaautomotores`, álbum de fotos: `/photos`) e Instagram (`@chita.automotores`). Esas plataformas bloquean el acceso automatizado, así que **el material se baja a mano** (o se lo pide el dueño por WhatsApp). Todo lo que sale de ahí es contenido del negocio: pedir autorización de uso (regla 1 y 4 de `CLAUDE.md`).
+Chita publica en Facebook (`facebook.com/Chitaautomotores`, álbum de fotos: `/photos`) e Instagram (`@PENDIENTE_INSTAGRAM_VILLON`). Esas plataformas bloquean el acceso automatizado, así que **el material se baja a mano** (o se lo pide el dueño por WhatsApp). Todo lo que sale de ahí es contenido del negocio: pedir autorización de uso (regla 1 y 4 de `CLAUDE.md`).
 
 ## 1. Juntar el material
 1. Pedirle al dueño una carpeta (Drive/WhatsApp) con las fotos originales de cada auto en stock: **las de la publicación sirven, pero las originales se ven mejor** (Facebook las comprime).

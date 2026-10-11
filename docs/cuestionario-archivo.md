@@ -1,4 +1,4 @@
-# Cuestionario de archivo — Chita Automotores
+# Cuestionario de archivo — Automotores Villon
 
 ## Objetivo
 
@@ -14,8 +14,8 @@ Completar únicamente los períodos y objetos que tengan una fuente comprobable.
 
 ## Datos actuales
 
-6. Confirmar por escrito: dirección **Gral. Galarza 1712**, teléfono **03442 44-2782**, perfiles oficiales y propuesta comercial de la portada.
-7. Confirmar el WhatsApp **5493442647442** antes de dejarlo como contacto público.
+6. Confirmar por escrito: dirección **Av. J. J. de Urquiza 2453**, teléfono **03447 64-7271**, perfiles oficiales y propuesta comercial de la portada.
+7. Confirmar el WhatsApp **PENDIENTE_WHATSAPP_549XXXXXXXXXX** antes de dejarlo como contacto público.
 8. ¿La foto del Chevrolet Tracker y su flyer pueden utilizarse en el sitio? Adjuntar autorización de uso.
 
 ## Derechos y fuentes

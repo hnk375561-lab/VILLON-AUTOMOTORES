@@ -7,7 +7,7 @@
 
 /* 1) Cartel «Agendá tu visita» translúcido */
 html body #visita#visita#visita#visita#visita .vx-head{
-  background:linear-gradient(150deg,rgba(193,18,31,.46),rgba(143,14,24,.40))!important;
+  background:linear-gradient(150deg,rgba(184,134,59,.46),rgba(143,14,24,.40))!important;
   -webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px)}
 html body #visita#visita#visita#visita#visita .vx-head h2,
 html body #visita#visita#visita#visita#visita .vx-head .vx-lead{text-shadow:0 2px 14px rgba(7,28,94,.6)!important}

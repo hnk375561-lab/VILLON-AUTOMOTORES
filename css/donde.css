@@ -8,15 +8,15 @@ html body #contacto.dn .dn-w{position:relative;width:100%!important;max-width:no
 html body #contacto.dn .dn-info{position:relative;z-index:3;display:flex;flex-direction:column;gap:16px;width:var(--dnw);min-width:0;box-sizing:border-box;padding:clamp(40px,6vh,72px) 0 clamp(40px,6vh,72px) clamp(20px,4vw,64px);color:#fff;pointer-events:none}
 html body #contacto.dn .dn-info>*{pointer-events:auto;position:relative;z-index:1;margin-right:clamp(20px,3vw,40px)}
 html body #contacto.dn .dn-info::before{content:"";position:absolute;z-index:0;top:0;bottom:0;left:0;width:calc(100% + clamp(120px,16vw,260px));background:linear-gradient(90deg,#01143B 0,#01143B calc(100% - clamp(120px,16vw,260px)),rgba(1,20,59,.88) calc(100% - clamp(120px,16vw,260px) + 12%),rgba(1,20,59,0) 100%);pointer-events:none}
-html body #contacto.dn .dn-eb{margin:0!important;padding:0 0 0 12px!important;border-left:6px solid #C1121F;font:800 13px/1.1 var(--font-display,Arial,sans-serif)!important;letter-spacing:.2em!important;text-transform:uppercase!important;color:#fff!important}
+html body #contacto.dn .dn-eb{margin:0!important;padding:0 0 0 12px!important;border-left:6px solid #B8863B;font:800 13px/1.1 var(--font-display,Arial,sans-serif)!important;letter-spacing:.2em!important;text-transform:uppercase!important;color:#fff!important}
 html body #contacto.dn .dn-eb::before,html body #contacto.dn .dn-eb::after{display:none!important}
 html body #contacto.dn address{margin:0!important;font-style:normal;color:#D6E0E6;font:500 clamp(15px,1.4vw,18px)/1.35 var(--b,Arial,sans-serif)!important}
 html body #contacto.dn address strong{display:block;font:800 clamp(32px,3.8vw,56px)/.95 var(--font-display,Arial,sans-serif)!important;letter-spacing:-.02em!important;text-transform:uppercase!important;color:#fff!important;margin:0 0 8px!important}
 html body #contacto.dn .hrs{margin-top:0!important;margin-bottom:0!important;padding:14px 0 0!important;border-top:2px dashed rgba(255,255,255,.28)!important}
 html body #contacto.dn .dn-acts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
-html body #contacto.dn .dn-c{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:52px;padding:0 14px;box-sizing:border-box;background:rgba(1,20,59,.9)!important;border:1px solid rgba(255,255,255,.3);border-left:4px solid #0A2C8C;color:#fff!important;font:700 14px/1.15 var(--font-display,Arial,sans-serif)!important;text-decoration:none;text-align:left;cursor:pointer;-webkit-appearance:none;appearance:none;transition:background-color .16s,color .16s}
+html body #contacto.dn .dn-c{display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:52px;padding:0 14px;box-sizing:border-box;background:rgba(1,20,59,.9)!important;border:1px solid rgba(255,255,255,.3);border-left:4px solid #1F4D45;color:#fff!important;font:700 14px/1.15 var(--font-display,Arial,sans-serif)!important;text-decoration:none;text-align:left;cursor:pointer;-webkit-appearance:none;appearance:none;transition:background-color .16s,color .16s}
 html body #contacto.dn .dn-c::after{content:"→";opacity:.7;flex:none}
-html body #contacto.dn .dn-c--p{background:#C1121F!important;border-color:#C1121F;border-left-color:#fff}
+html body #contacto.dn .dn-c--p{background:#B8863B!important;border-color:#B8863B;border-left-color:#fff}
 html body #contacto.dn .dn-c:hover,html body #contacto.dn .dn-c:focus-visible{background:#fff!important;color:#0A1020!important}
 html body #contacto.dn .dn-c.is-ok{background:#1b7f4b!important;border-color:#1b7f4b;color:#fff!important}
 html body #contacto.dn .dn-soc{display:flex;flex-wrap:wrap;gap:6px 18px;font:600 14px/1.2 var(--b,Arial,sans-serif)}
@@ -25,7 +25,7 @@ html body #contacto.dn .dn-soc a:hover{color:#B9BEC4!important}
 html body #contacto.dn .dn-c:focus-visible,html body #contacto.dn .dn-bar a:focus-visible,html body #contacto.dn .mp-ctl button:focus-visible{outline:3px solid #fff;outline-offset:2px}
 /* mapa: toda la sección */
 html body #contacto.dn .dn-map{position:absolute!important;inset:0!important;z-index:1;display:block!important;width:auto!important;height:auto!important;min-height:0!important;margin:0!important;padding:0!important;border:0!important;background:#cfdbe8;overflow:hidden;isolation:isolate;contain:layout paint}
-html body #contacto.dn .dn-ph{position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,transparent 0 47%,rgba(10,44,140,.1) 47% 53%,transparent 53%) 0 0/120px 100%,linear-gradient(0deg,transparent 0 47%,rgba(10,44,140,.1) 47% 53%,transparent 53%) 0 0/100% 90px,#cfdbe8;transition:opacity .4s}
+html body #contacto.dn .dn-ph{position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,transparent 0 47%,rgba(31,77,69,.1) 47% 53%,transparent 53%) 0 0/120px 100%,linear-gradient(0deg,transparent 0 47%,rgba(31,77,69,.1) 47% 53%,transparent 53%) 0 0/100% 90px,#cfdbe8;transition:opacity .4s}
 html body #contacto.dn .dn-map.rd .dn-ph{opacity:0;pointer-events:none}
 html body #contacto.dn .dn-pin{position:absolute;left:calc(50% + var(--dnw)/2);top:50%;transform:translate(-50%,calc(-100% - 9px))}
 html body #contacto.dn .dn-map .mp-lf{position:absolute;inset:0;z-index:1;background:#cfdbe8;cursor:grab;outline:0;font-family:inherit;touch-action:pan-y pinch-zoom}
@@ -34,7 +34,7 @@ html body #contacto.dn .dn-map iframe{position:absolute;inset:0;width:100%;heigh
 html body #contacto.dn .dn-map iframe:not([src]){display:none}
 /* cartel del pin «Chita 1712» (colores explícitos: legible aunque otra regla pinte de blanco) */
 html body #contacto.dn .cp{display:block;position:relative;width:104px;background:#fff!important;border:3px solid #0A1020;text-align:center;box-shadow:0 5px 0 -1px rgba(0,0,0,.28)}
-html body #contacto.dn .cp i{display:block;padding:6px 0;background:#0A2C8C!important;color:#fff!important;font:800 11px/1 var(--font-display,Arial,sans-serif)!important;font-style:normal;letter-spacing:.14em;text-transform:uppercase}
+html body #contacto.dn .cp i{display:block;padding:6px 0;background:#1F4D45!important;color:#fff!important;font:800 11px/1 var(--font-display,Arial,sans-serif)!important;font-style:normal;letter-spacing:.14em;text-transform:uppercase}
 html body #contacto.dn .cp b{display:block;padding:6px 0 7px;background:#fff!important;color:#0A1020!important;font:800 34px/1 var(--font-display,Arial,sans-serif)!important}
 html body #contacto.dn .cp::after{content:"";position:absolute;left:50%;top:100%;margin-left:-9px;border:9px solid transparent;border-top-color:#0A1020;border-bottom:0}
 html body #contacto.dn .dn-map .chita-pin{background:none;border:0}
@@ -50,7 +50,7 @@ html body #contacto.dn .dn-map .mp-ctl .mp-c span{color:inherit!important}
 html body #contacto.dn .dn-map .mp-ctl .mp-c svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
 html body #contacto.dn .dn-map .mp-ctl .mp-c.off{opacity:.6}
 html body #contacto.dn .dn-map .leaflet-control-attribution{font:11px/1.4 var(--b,Arial,sans-serif)!important;background:rgba(255,255,255,.9);color:#0A1020!important;padding:1px 6px;margin:0 0 54px}
-html body #contacto.dn .dn-map .leaflet-control-attribution a{color:#0A2C8C!important}
+html body #contacto.dn .dn-map .leaflet-control-attribution a{color:#1F4D45!important}
 html body #contacto.dn .dn-bar{position:absolute;right:0;bottom:0;left:auto;z-index:5;display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px;padding:10px 12px;background:none}
 html body #contacto.dn .dn-bar a{display:inline-flex;align-items:center;min-height:40px;padding:0 12px;background:rgba(1,20,59,.94);color:#fff!important;border:1px solid rgba(255,255,255,.5);font:700 13px/1 var(--font-display,Arial,sans-serif);text-decoration:none}
 html body #contacto.dn .dn-bar a:hover{background:#fff;color:#0A1020!important}

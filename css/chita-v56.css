@@ -31,7 +31,7 @@
 
 /* ═════════════ 2 · FINANCIACIÓN: titular y bajada sobre panel azul (ya no flotan sobre las fotos) ═════════════ */
 html body #financiacion#financiacion#financiacion .pdl{position:relative;max-width:min(880px,100%);padding:clamp(24px,2.6vw,38px) clamp(26px,3vw,44px) clamp(26px,2.8vw,40px)!important;
-  background:linear-gradient(150deg,rgba(10,44,140,.97) 0%,rgba(7,28,94,.97) 100%)!important;border-left:0!important;
+  background:linear-gradient(150deg,rgba(31,77,69,.97) 0%,rgba(7,28,94,.97) 100%)!important;border-left:0!important;
   clip-path:polygon(0 0,calc(100% - 24px) 0,100% 24px,100% 100%,0 100%)}
 html body #financiacion#financiacion#financiacion .pdl::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--rojo)}
 html body #financiacion#financiacion#financiacion .pdl :is(h2,p){text-shadow:none!important;color:#fff!important}
@@ -41,7 +41,7 @@ html body #financiacion#financiacion#financiacion .pdl p{max-width:52ch;color:rg
 html body #visita#visita#visita.vx{background:#0b2c8c!important;padding:clamp(60px,7vw,108px) 0!important}
 html body #visita#visita#visita .vx-w{--pad:clamp(16px,4vw,64px);position:relative;z-index:2;width:min(1240px,calc(100% - 2*var(--pad)));margin-inline:auto;display:block;padding:0;max-width:none}
 html body #visita#visita#visita .vx-head{position:relative;max-width:min(840px,100%);padding:clamp(24px,2.8vw,40px) clamp(26px,3.2vw,46px) clamp(26px,3vw,42px);
-  background:linear-gradient(150deg,rgba(10,44,140,.97),rgba(7,28,94,.97));clip-path:polygon(0 0,calc(100% - 26px) 0,100% 26px,100% 100%,0 100%)}
+  background:linear-gradient(150deg,rgba(31,77,69,.97),rgba(7,28,94,.97));clip-path:polygon(0 0,calc(100% - 26px) 0,100% 26px,100% 100%,0 100%)}
 html body #visita#visita#visita .vx-head::before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:var(--rojo)}
 html body #visita#visita#visita .vx-head h2{margin:0!important;font-size:clamp(40px,5.8vw,86px)!important;line-height:.93!important;color:#fff!important;text-shadow:none!important;text-transform:uppercase}
 html body #visita#visita#visita .vx-head h2::before{content:none!important;display:none!important}
@@ -86,7 +86,7 @@ html body #visita#visita#visita .vx-free input:focus-visible{outline:3px solid v
 html body #visita#visita#visita .vc{border:2px solid var(--ink);background:#fff}
 html body #visita#visita#visita .vc-h{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 12px;background:var(--ink)}
 html body #visita#visita#visita .vc-h b{font:800 15px/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:#fff!important}
-html body #visita#visita#visita .vc-h b i{font-style:normal;color:#EE4B55}
+html body #visita#visita#visita .vc-h b i{font-style:normal;color:#D9A85C}
 html body #visita#visita#visita .vc-n{width:40px;height:40px;padding:0;border:1px solid rgba(255,255,255,.4);border-radius:0;background:transparent;color:#fff!important;font-size:18px;line-height:1;cursor:pointer;transition:background .2s,border-color .2s}
 html body #visita#visita#visita .vc-n:hover:not(:disabled){background:var(--rojo);border-color:var(--rojo)}
 html body #visita#visita#visita .vc-n:disabled{opacity:.3;cursor:default}

@@ -176,6 +176,6 @@ html body #guia .gp-note{margin:clamp(40px,5vw,64px) 0 0;padding-top:18px;border
   html body #guia .gp-step{break-inside:avoid}
   html body #guia :is(h2,p,li,span,small,b,label,summary){opacity:1!important;clip-path:none!important;transform:none!important;-webkit-text-fill-color:currentColor!important}
   html body #guia .gp-check span,html body #guia .gp-count span{color:#0A1020!important}
-  html body #guia .gp-n{background:#0A2C8C!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  html body #guia .gp-n{background:#1F4D45!important;color:#fff!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   html body #guia .gp-check input{border-color:#0A1020!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
 }

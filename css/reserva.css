@@ -2,7 +2,7 @@
    Reemplaza por completo al css/reserva.css anterior. */
 @font-face{font-family:"Instrument Sans";src:url('../fonts/instrument-sans-latin.woff2') format('woff2');font-weight:400 700;font-display:swap}
 @font-face{font-family:"Bricolage Grotesque";src:url('../fonts/bricolage-grotesque-latin.woff2') format('woff2');font-weight:100 900;font-display:swap}
-:root{--ink:#0A1020;--bone:#ECEDEA;--red:#C1121F;--blue:#0A2C8C;--nav-h:68px;--pad:clamp(18px,3.5vw,52px);--cut:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--ink);color:var(--bone)}
+:root{--ink:#0A1020;--bone:#ECEDEA;--red:#B8863B;--blue:#1F4D45;--nav-h:68px;--pad:clamp(18px,3.5vw,52px);--cut:polygon(0 0,calc(100% - 14px) 0,100% 14px,100% 100%,0 100%);font-family:"Bricolage Grotesque",system-ui,sans-serif;background:var(--ink);color:var(--bone)}
 *{box-sizing:border-box}
 html,body{height:100%;margin:0;background:var(--ink);color:var(--bone);overflow:hidden}
 body{font-size:16px}

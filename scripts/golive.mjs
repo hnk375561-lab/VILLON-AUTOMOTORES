@@ -8,7 +8,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const args = process.argv.slice(2);
 if (!args.includes('--dry')) { console.error('Solo existe el modo --dry (no aplica cambios). Uso: npm run golive -- --dry --domain=https://tu-dominio/'); process.exit(2); }
 const dom = ((args.find((a) => a.startsWith('--domain=')) || '').slice(9) || 'https://DOMINIO-DEFINITIVO').replace(/\/+$/, '') + '/';
-const OLD = 'https://hnk375561-lab.github.io/chita/';
+const OLD = 'https://PENDIENTE_USUARIO.github.io/REPO/';
 const read = (f) => fs.readFileSync(path.join(root, f), 'utf8');
 const out = [];
 const note = (f, m) => out.push(`  ${f.padEnd(22)} ${m}`);

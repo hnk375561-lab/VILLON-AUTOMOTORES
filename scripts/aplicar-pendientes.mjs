@@ -29,11 +29,11 @@ if (given(email) || given(rs) || given(cuit) || given(dom)) {
   const re = /<p><strong>Responsable\.<\/strong>[\s\S]*?<\/p>/;
   if (!re.test(h)) errs.push('privacidad.html: no encontré el párrafo "Responsable."');
   else {
-    const nombre = d.identity.legalName || 'Chita Automotores';
+    const nombre = d.identity.legalName || 'Automotores Villon';
     const partes = [`<strong>Responsable.</strong> ${esc(nombre)}`];
     if (d.identity.cuit) partes.push(`CUIT ${esc(d.identity.cuit)}`);
-    partes.push(`${esc(d.identity.legalAddress || 'Gral. Galarza 1712, Concepción del Uruguay, Entre Ríos')}`);
-    partes.push(`Tel. 03442 44-2782`);
+    partes.push(`${esc(d.identity.legalAddress || 'Av. J. J. de Urquiza 2453, Villa Elisa, Entre Ríos')}`);
+    partes.push(`Tel. 03447 64-7271`);
     if (d.contact.email) partes.push(`Email: <a href="mailto:${esc(d.contact.email)}">${esc(d.contact.email)}</a>`);
     h = h.replace(re, `<p>${partes.join('. ')}.</p>`);
     write('privacidad.html', h);
@@ -74,7 +74,7 @@ if (!errs.length) write('data/vehicles.json', JSON.stringify(reg, null, 2) + '\n
 
 // 3. Producción (solo con --produccion): dominio, indexación, robots, sitemap
 if (prod) {
-  const pr = p.produccion || {}; const OLD = 'https://hnk375561-lab.github.io/chita/';
+  const pr = p.produccion || {}; const OLD = 'https://PENDIENTE_USUARIO.github.io/REPO/';
   if (pr.confirmar !== true) errs.push('produccion.confirmar debe ser true');
   if (!/^https:\/\/[^\s/]+$/.test(pr.dominio || '')) errs.push('produccion.dominio debe ser https://dominio (sin barra final)');
   if (d.photos?.authorized !== true) errs.push('photos.authorized no es true');

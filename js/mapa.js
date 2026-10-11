@@ -33,7 +33,7 @@ if (cb) {
 var mp = document.querySelector("#contacto .dn-map");
 if (!mp) return;
 
-var CHITA = [-32.486865, -58.250318];           // Gral. Galarza 1712
+var CHITA = [-32.1549728, -58.4106658];           // Av. J. J. de Urquiza 2453
 var ZOOM = 17;
 var TILES = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
 var ATTR = '© <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>';
@@ -111,7 +111,7 @@ function init() {
   el = document.createElement("div");
   el.className = "mp-lf";
   el.setAttribute("role", "region");
-  el.setAttribute("aria-label", "Mapa de Chita Automotores, Gral. Galarza 1712. Con el mapa enfocado, las flechas lo mueven y + o − acercan y alejan.");
+  el.setAttribute("aria-label", "Mapa de Automotores Villon, Av. J. J. de Urquiza 2453. Con el mapa enfocado, las flechas lo mueven y + o − acercan y alejan.");
   el.tabIndex = 0;
   mp.insertBefore(el, mp.firstChild);
 
@@ -142,7 +142,7 @@ function init() {
   tiles.addTo(map);
 
   /* Ficha: marcador del mapa. La punta de la flecha (9 px bajo la ficha) toca exactamente la coordenada. */
-  var icon = L.divIcon({ className: "chita-pin", iconSize: null, iconAnchor: [0, 0], html: '<span class="cp"><i>Chita</i><b>1712</b></span>' });
+  var icon = L.divIcon({ className: "chita-pin", iconSize: null, iconAnchor: [0, 0], html: '<span class="cp"><i>Villon</i><b>2453</b></span>' });
   var mk = L.marker(CHITA, { icon: icon, interactive: false, keyboard: false, zIndexOffset: 1000 }).addTo(map);
   function anchor() {
     var n = mk.getElement(); if (!n) return;

@@ -1,4 +1,4 @@
-/* Chita Automotores · lógica de la página (tarjetas, galerías, ficha, hero, formularios).
+/* Automotores Villon · lógica de la página (tarjetas, galerías, ficha, hero, formularios).
    Los datos (NEGOCIO y STOCK) siguen en un <script> inline de index.html: es lo único que se edita a mano.
    Script clásico, sin defer: se ejecuta en el mismo punto y orden en que lo hacía inline. */
 (function(){
@@ -34,9 +34,9 @@ $("addr").innerHTML=dir;$("fAddr").textContent=N.direccion+", "+N.ciudad;
 var p=$("phoneLink");p.href="tel:"+N.telefonoTel;p.textContent="Llamar al "+N.telefono;
 $("fPhone").href="tel:"+N.telefonoTel;$("fPhone").textContent="Tel. "+N.telefono;$("barCall").href="tel:"+N.telefonoTel;
 if(N.horarios&&!$("hrs").hasAttribute("data-static"))$("hrs").innerHTML="<h3>Horarios de atención</h3><p>"+esc(N.horarios)+"</p>";
-document.querySelectorAll("[data-ig]").forEach(function(a){a.href="https://www.instagram.com/"+N.instagram+"/"});
-document.querySelectorAll("[data-fb]").forEach(function(a){a.href=N.facebook});document.querySelectorAll("[data-tel]").forEach(function(a){a.href="tel:"+N.telefonoTel});
-$("igLink").textContent="Instagram @"+N.instagram;
+document.querySelectorAll("[data-ig]").forEach(function(a){if(N.instagram){a.href="https://www.instagram.com/"+N.instagram+"/"}else{a.hidden=true;a.style.display="none"}});
+document.querySelectorAll("[data-fb]").forEach(function(a){if(N.facebook){a.href=N.facebook}else{a.hidden=true;a.style.display="none"}});document.querySelectorAll("[data-tel]").forEach(function(a){a.href="tel:"+N.telefonoTel});
+if($("igLink"))$("igLink").textContent="Instagram @"+N.instagram;
 function render(){$("stockGrid").innerHTML=STOCK.map(card).join("");$("stockStatus").textContent=STOCK.length+(STOCK.length===1?" auto":" autos")}
 /* Galería propia: pista con transform, flechas, arrastre, miniaturas y teclado. La usan las tarjetas y la ficha */
 var SUP=0;
@@ -71,7 +71,7 @@ $("stockGrid").addEventListener("error",broken,true);
 render();
 
 var D=$("dlg");D.addEventListener("error",broken,true);
-var BRAND='<div class="fcbr"><div class="lg"><img src="images/logo.webp" alt="Chita Automotores" width="722" height="287"></div><p><strong>'+esc(N.nombre)+'</strong>'+esc(N.direccion)+', '+esc(N.ciudad.split(',')[0])+'<br><a href="tel:'+esc(N.telefonoTel)+'">'+esc(N.telefono)+'</a> · <a href="https://www.instagram.com/'+esc(N.instagram)+'/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="'+esc(N.facebook)+'" target="_blank" rel="noopener noreferrer">Facebook</a></p></div>';
+var BRAND='<div class="fcbr"><p><strong>'+esc(N.nombre)+'</strong>'+esc(N.direccion)+', '+esc(N.ciudad.split(',')[0])+'<br><a href="tel:'+esc(N.telefonoTel)+'">'+esc(N.telefono)+'</a> · <a href="https://www.instagram.com/'+esc(N.instagram)+'/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="'+esc(N.facebook)+'" target="_blank" rel="noopener noreferrer">Facebook</a></p></div>';
 function slug(c){return String((c.corto||c.titulo)+"-"+c.anio).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
 function shareUrl(i){return location.href.split("#")[0]+"#unidad-"+slug(STOCK[i])}
 function tbc(v){return v?'<dd>'+esc(v)+'</dd>':""}
@@ -195,7 +195,7 @@ amb(SL[0].src,true);document.addEventListener("chita:hero",function(e){amb(SL[e.
 var cap=HM&&HM.parentNode;if(cap){var sp=document.createElement("dl");sp.className="hx-spec";sp.setAttribute("aria-hidden","true");HM.insertAdjacentElement("afterend",sp);
 function spec(c){sp.innerHTML='<div><dt>Año</dt><dd>'+esc(c.anio||"—")+'</dd></div><div><dt>Km</dt><dd>'+esc(c.km||"Consultar")+'</dd></div><div><dt>Combustible</dt><dd>'+esc(c.combustible||"—")+'</dd></div>'}
 spec(STOCK[SL[0].c]);document.addEventListener("chita:hero",function(e){spec(STOCK[SL[e.detail.to].c])})}
-var cp=R.querySelector(".hx-copy");if(cp){var ft=document.createElement("p");ft.className="hx-foot hx-ui";ft.textContent=STOCK.length+" autos publicados · "+N.direccion+", Concepción del Uruguay";cp.appendChild(ft)}})();
+var cp=R.querySelector(".hx-copy");if(cp){var ft=document.createElement("p");ft.className="hx-foot hx-ui";ft.textContent=STOCK.length+" autos publicados · "+N.direccion+", Villa Elisa";cp.appendChild(ft)}})();
 
 
 /* Vender o permutar: una unidad por vez (segunda foto de cada una). motion.js anima el cambio con el evento chita:vr */
@@ -218,13 +218,13 @@ VB.addEventListener("click",function(e){var b=e.target.closest("button");if(b)vr
 VR.addEventListener("click",function(e){var a=e.target.closest("[data-vd]");if(a){var d=+a.getAttribute("data-vd");vrGo(vi+d,d)}});
 window.chitaVr={go:vrGo,next:function(){vrGo(vi+1,1)},get i(){return vi},n:vL}})();
 
-$("fqc").textContent=N.direccion+" · "+N.telefono;
+if($("fqc"))$("fqc").textContent=N.direccion+" · "+N.telefono;
 
 /* Formulario: valida y arma el mensaje de contacto segun la intencion elegida */
 /* Validación sin reportValidity(): evita el error de Chromium "invalid form control is not focusable"; el aviso va en el texto de estado */
 function formOk(f){if(f.checkValidity())return true;var b=f.querySelector(":invalid"),st=f.querySelector(".fs");if(st)st.textContent=(b&&b.validationMessage)||"Revisá los datos.";try{if(b&&b.getClientRects().length)b.focus({preventScroll:false})}catch(_){}return false}
 var FM=$("canjeForm"),FS=$("fStatus"),YR=new Date().getFullYear()+1;
-function kmVal(v){return v.replace(/[.\s]/g,"")}
+if(FM){function kmVal(v){return v.replace(/[.\s]/g,"")}
 function check(){var m=FM.modelo,a=FM.anio,k=FM.km,y=+a.value;
 m.setCustomValidity(m.value.trim()?"":"Escribí la marca y el modelo.");
 a.setCustomValidity(/^\d{4}$/.test(a.value)&&y>=1950&&y<=YR?"":"Escribí un año de 4 dígitos entre 1950 y "+YR+".");
@@ -236,7 +236,7 @@ var PV=$("wpT");function pv(){if(PV)PV.textContent=msgText()}
 FM.addEventListener("input",function(){check();FS.textContent="";pv()});check();pv();
 FM.addEventListener("submit",function(e){e.preventDefault();check();if(!formOk(FM))return;
 var u=wa(msgText());
-if(isWebContact(u)){FS.textContent="Abriendo WhatsApp con tu consulta. Si no se abrió, ";var l=document.createElement("a");l.href=u;l.target="_blank";l.rel="noopener noreferrer";l.textContent="tocá acá";FS.appendChild(l);FS.appendChild(document.createTextNode("."));window.open(u,"_blank","noopener")}else{callFallback(FS,msgText())}});
+if(isWebContact(u)){FS.textContent="Abriendo WhatsApp con tu consulta. Si no se abrió, ";var l=document.createElement("a");l.href=u;l.target="_blank";l.rel="noopener noreferrer";l.textContent="tocá acá";FS.appendChild(l);FS.appendChild(document.createTextNode("."));window.open(u,"_blank","noopener")}else{callFallback(FS,msgText())}});}
 /* Visita y búsqueda: arman un mensaje de contacto que envía la persona; no se guarda nada */
 $("vsU").insertAdjacentHTML("beforeend",STOCK.map(function(c,i){return '<label class="ck"><input type="checkbox" name="u" value="'+i+'"><span>'+esc(c.titulo+" "+c.anio)+'</span></label>'}).join(""));
 function waForm(f,build){var s=f.querySelector(".fs");f.addEventListener("submit",function(e){e.preventDefault();if(!formOk(f))return;var m=build(f),u=wa(m);if(isWebContact(u)){s.textContent="Abriendo WhatsApp con tu consulta. Si no se abrió, ";var l=document.createElement("a");l.href=u;l.target="_blank";l.rel="noopener noreferrer";l.textContent="tocá acá";s.appendChild(l);s.appendChild(document.createTextNode("."));window.open(u,"_blank","noopener")}else{callFallback(s,m)}})}

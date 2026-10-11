@@ -11,9 +11,9 @@
 html body main>section#horarios.hor{
   background-color:#070d1f;
   background-image:
-    linear-gradient(104deg,transparent 0 6%,rgba(255,255,255,.1) 6% 6.1%,transparent 6.1% 8%,rgba(193,18,31,.8) 8% 8.5%,transparent 8.5%),
+    linear-gradient(104deg,transparent 0 6%,rgba(255,255,255,.1) 6% 6.1%,transparent 6.1% 8%,rgba(184,134,59,.8) 8% 8.5%,transparent 8.5%),
     repeating-linear-gradient(104deg,rgba(255,255,255,.04) 0 1px,transparent 1px 44px),
-    radial-gradient(ellipse 65% 100% at 10% 0%,rgba(10,44,140,.5),transparent 70%),
+    radial-gradient(ellipse 65% 100% at 10% 0%,rgba(31,77,69,.5),transparent 70%),
     linear-gradient(180deg,#070d1f 0,#0a1430 100%)!important;
 }
 /* la regla tricolor del borde inferior: motion.css:13 oculta todos los ::after de las secciones */
@@ -47,7 +47,7 @@ html body #operaciones#operaciones#operaciones#operaciones .oc .ob a:focus-visib
 html body #contacto.dn .dn-map .mp-go{
   position:absolute;z-index:4;left:calc(50% + var(--dnw)/2);top:calc(50% + 24px);transform:translateX(-50%);
   min-height:48px;padding:0 22px;border:0;border-radius:0;cursor:pointer;
-  background:#C1121F;color:#fff;font:800 14px/1 var(--font-display,Arial,sans-serif);letter-spacing:.1em;text-transform:uppercase}
+  background:#B8863B;color:#fff;font:800 14px/1 var(--font-display,Arial,sans-serif);letter-spacing:.1em;text-transform:uppercase}
 html body #contacto.dn .dn-map .mp-go:hover,html body #contacto.dn .dn-map .mp-go:focus-visible{background:#fff;color:#0A1020}
 html body #contacto.dn .dn-map .mp-go:focus-visible{outline:3px solid #0A1020;outline-offset:3px}
 @media(max-width:900px){html body #contacto.dn .dn-map .mp-go{left:50%}}

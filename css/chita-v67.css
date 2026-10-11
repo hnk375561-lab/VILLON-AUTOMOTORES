@@ -11,7 +11,7 @@
    Técnica: no se pisa ningún color existente, se SUPERPONEN capas translúcidas con background-image, así los estados
    (hover, marcado, hoy, etc.) que ya funcionan siguen mandando. «§» = las cinco secciones (se expande abajo con mayor especificidad). */
 
-:root{--v67-rojo:#C1121F;--v67-azul:#0A2C8C;--v67-ink:#0A1020;--v67-ease:cubic-bezier(.2,.8,.2,1)}
+:root{--v67-rojo:#B8863B;--v67-azul:#1F4D45;--v67-ink:#0A1020;--v67-ease:cubic-bezier(.2,.8,.2,1)}
 
 /* ═════════ 1 · BOTONES (todos los .btn de las cinco secciones) ═════════
    metal rojo: luz arriba, filo oscuro abajo, hilo de brillo; destello diagonal y flecha al pasar el mouse */
@@ -60,7 +60,7 @@ html body #preguntas#preguntas #buscoForm :is(input[type="text"],select){
 html body #buscoForm :is(input,select):hover{border-color:#8FA0C0}
 html body :is(#buscoForm,#visitaForm,.fin-ticket) :is(input[type="text"],select):focus{
   outline:0;border-color:var(--v67-azul)!important;
-  box-shadow:inset 0 -3px 0 var(--v67-rojo),0 0 0 4px rgba(10,44,140,.14)}
+  box-shadow:inset 0 -3px 0 var(--v67-rojo),0 0 0 4px rgba(31,77,69,.14)}
 html body #buscoForm input::placeholder,html body #visitaForm input::placeholder{color:#7A869C;font-weight:500}
 /* selector con flecha propia (la nativa cambia según el navegador) */
 html body :is(#preguntas#preguntas #buscoForm,#financiacion#financiacion .fin-ticket) select{
@@ -77,7 +77,7 @@ html body #preguntas#preguntas #buscoForm label i{font-style:normal;font-weight:
 html body #preguntas#preguntas #buscoForm{
   position:relative;
   background-image:linear-gradient(180deg,#fff 0,#F7F9FC 100%);
-  box-shadow:inset 0 0 0 1px rgba(10,16,32,.08),inset 0 -4px 0 rgba(10,44,140,.10)}
+  box-shadow:inset 0 0 0 1px rgba(10,16,32,.08),inset 0 -4px 0 rgba(31,77,69,.10)}
 /* cinta tricolor en el borde superior, inclinada como la del sitio */
 html body #preguntas#preguntas #buscoForm::after{
   content:"";position:absolute;left:0;right:0;top:0;height:6px;pointer-events:none;
@@ -228,7 +228,7 @@ html body #operaciones#operaciones #canjeForm :is(input[type="text"],select){
   transition:border-color .2s,box-shadow .2s}
 html body #operaciones#operaciones #canjeForm :is(input,select):hover{border-color:#8FA0C0!important}
 html body #operaciones#operaciones #canjeForm :is(input[type="text"],select):focus{
-  outline:0;border-color:var(--v67-azul)!important;box-shadow:inset 0 -3px 0 var(--v67-rojo),0 0 0 4px rgba(10,44,140,.14)!important}
+  outline:0;border-color:var(--v67-azul)!important;box-shadow:inset 0 -3px 0 var(--v67-rojo),0 0 0 4px rgba(31,77,69,.14)!important}
 html body #operaciones#operaciones #canjeForm select[name]{
   -webkit-appearance:none;appearance:none;cursor:pointer;padding-right:46px;
   background-image:
@@ -263,7 +263,7 @@ html body #visita#visita #visitaForm .vx-free input{
   background-image:linear-gradient(180deg,#fff 0,#F4F7FB 100%)!important;box-shadow:inset 0 2px 0 rgba(10,16,32,.05)!important;
   transition:box-shadow .2s,border-color .2s}
 html body #visita#visita #visitaForm .vx-free input:focus{
-  outline:0!important;border-bottom-color:var(--v67-rojo)!important;box-shadow:inset 0 -3px 0 var(--v67-rojo),0 0 0 4px rgba(10,44,140,.14)!important}
+  outline:0!important;border-bottom-color:var(--v67-rojo)!important;box-shadow:inset 0 -3px 0 var(--v67-rojo),0 0 0 4px rgba(31,77,69,.14)!important}
 
 /* ═════════ 10 · REMATES ═════════ */
 /* placeholders con contraste suficiente (≥ 4,5:1 sobre blanco) */
@@ -298,7 +298,7 @@ html body #visita#visita :is(.ck,.vc-d:not(:disabled),.vc-f:not(:disabled)):acti
 /* tarjeta «Qué buscás»: bloque de sombra dura (no difusa) detrás, como ficha apoyada sobre el papel */
 @media(min-width:900px){
   html body #preguntas#preguntas #buscoForm{
-    box-shadow:inset 0 0 0 1px rgba(10,16,32,.08),inset 0 -4px 0 rgba(10,44,140,.10),9px 9px 0 var(--v67-ink)}
+    box-shadow:inset 0 0 0 1px rgba(10,16,32,.08),inset 0 -4px 0 rgba(31,77,69,.10),9px 9px 0 var(--v67-ink)}
 }
 /* campo ya completado: marca azul a la izquierda, se ve de un vistazo qué falta */
 html body #preguntas#preguntas #buscoForm input[type="text"]:not(:placeholder-shown):not(:focus):not(:user-invalid),
@@ -375,3 +375,6 @@ html body :is(#buscoForm,#canjeForm) .meta a:hover{color:var(--v67-azul)}
 
 /* Aviso de demo (se elimina al pasar a producción) */
 .demo-note{margin:10px 0 0;font:600 12px/1.4 var(--font-body,system-ui);letter-spacing:.02em;opacity:.8}
+
+/* Villon: sin marca de agua ni insignias heredadas */
+.car .im::after,.oi::after{display:none!important}

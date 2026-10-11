@@ -1,5 +1,5 @@
 {
-  "name": "chita-web",
+  "name": "villon-web",
   "private": true,
   "type": "module",
   "scripts": {
@@ -13,7 +13,6 @@
     "check:all": "node scripts/check-all.mjs",
     "check:mobile": "node scripts/check-all.mjs --mobile",
     "check:desktop": "node scripts/check-all.mjs --desktop",
-    "debug:anchors": "node scripts/debug-anchors.mjs",
     "check:safari": "node scripts/check-all.mjs --webkit",
     "check:devices": "node scripts/check-all.mjs --all-devices",
     "golive": "node scripts/golive.mjs"

@@ -40,7 +40,7 @@ html body #unidades .cph img{display:block;width:100%;height:100%;object-fit:cov
 html body #unidades .cph:hover img{transform:scale(1.045)}
 html body #unidades .cph-main{grid-column:1/-1;aspect-ratio:16/10}
 html body #unidades .cph-calle{aspect-ratio:3/2}
-html body #unidades .cph-logo{aspect-ratio:3/2;display:grid;place-items:center;background:var(--chapa) url(../images/fondo-marca.webp) center/cover no-repeat}
+html body #unidades .cph-logo{aspect-ratio:3/2;display:grid;place-items:center;background:var(--chapa) none center/cover no-repeat}
 html body #unidades .cph-logo img{width:min(64%,170px);height:auto;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 8px 18px rgba(0,0,0,.4))}
 html body #unidades .cph figcaption{position:absolute;left:0;right:0;bottom:0;display:flex;flex-wrap:wrap;gap:2px 12px;align-items:baseline;padding:30px 14px 11px 22px;background:linear-gradient(0deg,rgba(10,16,32,.92),rgba(10,16,32,0));font:700 13px/1.25 var(--font-display);letter-spacing:.03em;z-index:1}
 html body #unidades .cph figcaption b{font-weight:800;font-size:15px;letter-spacing:.01em}

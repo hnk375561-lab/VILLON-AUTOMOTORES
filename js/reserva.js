@@ -1,7 +1,7 @@
 import { gsap } from "./motion/vendor.js";
 import { reduceMotion } from "./motion/core.js";
 
-const CONFIG = { slots: ["Mañana", "Tarde"], slotsNote: "Es una consulta: te confirmamos día y horario. Los domingos no atendemos.", whatsapp: "5493442647442" };
+const CONFIG = { slots: ["Mañana", "Tarde"], slotsNote: "Es una consulta: te confirmamos día y horario. Los domingos no atendemos y los sábados atendemos solo por la mañana.", whatsapp: "" };
 const $ = (selector, root = document) => root.querySelector(selector);
 const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
 const months = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];

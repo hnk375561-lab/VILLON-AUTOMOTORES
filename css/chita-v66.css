@@ -54,9 +54,9 @@ html body main>section#opiniones.rv2,html body main>section#como-comprar.cc2{
 html body main>section#opiniones.rv2{
   background:
     repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 8.3333%),
-    linear-gradient(45deg,#C1121F 0 50%,transparent 50%) 0 100%/var(--tri) var(--tri) no-repeat,
+    linear-gradient(45deg,#B8863B 0 50%,transparent 50%) 0 100%/var(--tri) var(--tri) no-repeat,
     radial-gradient(ellipse 60% 70% at 15% 35%,rgba(120,165,255,.22),transparent 70%),
-    #0A2C8C!important;
+    #1F4D45!important;
 }
 html body #opiniones .rv2-dg{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none;display:block}
 html body #opiniones .rv2-dg::before,html body #opiniones .rv2-dg::after{
@@ -64,7 +64,7 @@ html body #opiniones .rv2-dg::before,html body #opiniones .rv2-dg::after{
 }
 html body #opiniones .rv2-dg::before{ /* cinta */
   left:var(--dgx);width:var(--dgw);
-  background:linear-gradient(90deg,#fff 0 2px,#C1121F 2px 14px,transparent 14px 27px,rgba(255,255,255,.28) 27px 100%);
+  background:linear-gradient(90deg,#fff 0 2px,#B8863B 2px 14px,transparent 14px 27px,rgba(255,255,255,.28) 27px 100%);
 }
 html body #opiniones .rv2-dg::after{ /* panel oscuro a la derecha, con sus tres filetes y el brillo */
   left:calc(var(--dgx) + var(--dgw));width:100%;
@@ -81,7 +81,7 @@ html body #como-comprar .cc2-dg{position:absolute;left:0;right:0;top:0;height:cl
 html body #como-comprar .cc2-dg::before{
   content:"";display:block!important;position:absolute;left:var(--dgx);top:0;bottom:0;width:var(--dgw);
   transform-origin:0 0;transform:skewX(var(--dga));
-  background:linear-gradient(90deg,#fff 0 2px,#C1121F 2px 14px,transparent 14px 27px,#0A2C8C 27px 100%);
+  background:linear-gradient(90deg,#fff 0 2px,#B8863B 2px 14px,transparent 14px 27px,#1F4D45 27px 100%);
   -webkit-mask-image:linear-gradient(180deg,#000 0,#000 64px,rgba(0,0,0,.5) 190px,rgba(0,0,0,.16) 330px,transparent 100%);
           mask-image:linear-gradient(180deg,#000 0,#000 64px,rgba(0,0,0,.5) 190px,rgba(0,0,0,.16) 330px,transparent 100%);
 }
@@ -91,7 +91,7 @@ html body #como-comprar .cc2-wrap{z-index:2}
 
 /* el triángulo rojo del borde, reflejado: arriba apunta con el ángulo recto abajo-izquierda, acá con el ángulo recto arriba-izquierda.
    Juntos con la regla roja (.tl) forman una sola pieza que cruza el festón. */
-html body #como-comprar .cc2-tri{position:absolute;left:0;top:0;width:var(--tri);height:var(--tri);z-index:1;pointer-events:none;display:block;background:linear-gradient(135deg,#C1121F 0 50%,transparent 50%)}
+html body #como-comprar .cc2-tri{position:absolute;left:0;top:0;width:var(--tri);height:var(--tri);z-index:1;pointer-events:none;display:block;background:linear-gradient(135deg,#B8863B 0 50%,transparent 50%)}
 
 @media(prefers-reduced-motion:no-preference){
   @media(scripting:enabled){

@@ -9,7 +9,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const out = path.join(root, '_site');
 
 // Lista blanca: lo que no está acá no se publica (golive/, data/, docs/, scripts/, notas…).
-const FILES = ['index.html', '404.html', 'privacidad.html', 'reserva.html', 'og-chita.png', 'site.webmanifest', 'robots.txt', 'sitemap.xml'];
+const FILES = ['index.html', '404.html', 'privacidad.html', 'reserva.html', 'og-villon.png', 'site.webmanifest', 'robots.txt', 'sitemap.xml'];
 const DIRS = ['css', 'js', 'fonts', 'images', 'assets', 'video'];
 
 fs.rmSync(out, { recursive: true, force: true });

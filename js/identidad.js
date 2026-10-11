@@ -114,7 +114,7 @@ var d=document,RM=true/* sin reveals al scrollear: no se agrega .cj y todas las 
 if(!RM)d.documentElement.classList.add("cj");
 /* EL RIEL */
 var hero=d.getElementById("hero");
-if(hero){var r=d.createElement("div");r.className="rl";r.setAttribute("aria-hidden","true");r.textContent="Chita Automotores · Entre Ríos";hero.appendChild(r)}
+if(hero){var r=d.createElement("div");r.className="rl";r.setAttribute("aria-hidden","true");r.textContent="Automotores Villon · Entre Ríos";hero.appendChild(r)}
 /* EL CORTE: un observador para las chapas de sección */
 var T=[].slice.call(main.querySelectorAll(":scope>section"));
 if("IntersectionObserver" in window&&!RM){var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}})},{threshold:.08,rootMargin:"0px 0px -8% 0px"});T.forEach(function(s){io.observe(s)})}
